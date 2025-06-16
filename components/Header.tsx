@@ -17,7 +17,13 @@ const Header = () => {
       <Link href="/" aria-label={siteMetadata.headerTitle}>
         <div className="flex items-center justify-between">
           <div className="mr-3">
-            <Image src={Logo} alt="Logo" width={100} height={100} className="w-25 h-25 rounded-full" />
+            <Image
+              src={Logo}
+              alt="Logo"
+              width={100}
+              height={100}
+              className="h-25 w-25 rounded-full"
+            />
           </div>
           {typeof siteMetadata.headerTitle === 'string' ? (
             <div className="hidden h-6 text-2xl font-semibold sm:block">
